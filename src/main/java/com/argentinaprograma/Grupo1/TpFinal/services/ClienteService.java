@@ -11,9 +11,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class ClienteService {
     ClienteRepository clienteRepository;
+
     @Autowired
     public ClienteService(ClienteRepository clienteRepository) {
         this.clienteRepository = clienteRepository;
+    }
+
+    public ClienteService() {
     }
 
 
@@ -28,21 +32,23 @@ public class ClienteService {
 
 
 
+
+
+
 //Buscar Cliente por id
-
-    public Cliente buscarPorId(Cliente id){
-        return (clienteRepository.buscarPorId(id.getCuit(),
-                id.getEmail(),id.getRazonSocial(),
-                id.getNombre(),id.getApellido()));
-
-    }
-
-//Borrar por id
-
-    public Cliente deleteById( Cliente id){
-        return (clienteRepository.deleteById(id.getCuit(),id.getEmail(),id.getRazonSocial(),id.getNombre(),id.getNombre(),id.getApellido())
-        );
-    }
+//
+//    public Cliente buscarPorId(Cliente id){
+//        return (clienteRepository.buscarPorId(id.getCuit(),
+//                id.getEmail(),id.getRazonSocial(),
+//                id.getNombre(),id.getApellido()));
+//
+//    }
+//
+////Borrar por id
+//  public Integer borrarPorId( Cliente c){
+//      return clienteRepository.deleteById(c).getId();
+//
+//   }
 
 
 

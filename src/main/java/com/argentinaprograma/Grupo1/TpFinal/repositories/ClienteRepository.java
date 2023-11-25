@@ -5,10 +5,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
-    Cliente buscarPorId(long cuit, String email, String razonSocial, String nombre, String apellido);
+   // Cliente buscarPorId(long cuit, String email, String razonSocial, String nombre, String apellido);
 
     //Cliente borrarCliente(long cuit, String email, String razonSocial, String nombre, String apellido);
 
 
-    Cliente deleteById(long cuit, String email, String razonSocial, String nombre, String nombre1, String apellido);
+  //  Cliente deleteById(long cuit, String email, String razonSocial, String nombre, String nombre1, String apellido);
+
+
 }
